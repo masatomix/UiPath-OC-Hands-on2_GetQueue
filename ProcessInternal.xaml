@@ -18,7 +18,7 @@
   <this:ProcessInternal.FromAddress>
     <InArgument x:TypeArguments="x:String" />
   </this:ProcessInternal.FromAddress>
-  <sap:VirtualizedContainerService.HintSize>559,788</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1694,1156</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
   <TextExpression.NamespacesForImplementation>
@@ -61,7 +61,7 @@
           </scg1:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="字幕を表示" DurationMS="5000" FontSize="38" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_2" Message="リトライ不可能な例外なので、ビジネス例外をスローします" TextColor="White" />
-        <Throw DisplayName="スロー" Exception="[new BusinessRuleException(&quot;リトライ不可能な例外なので、即失敗&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_3" />
+        <Throw DisplayName="ビジネス例外をスロー" Exception="[new BusinessRuleException(&quot;リトライ不可能な例外なので、即失敗&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_3" />
       </Sequence>
       <Sequence x:Key="タイムアウトするデータ" sap:VirtualizedContainerService.HintSize="242,176" sap2010:WorkflowViewState.IdRef="Sequence_6">
         <sap:WorkflowViewStateService.ViewState>
@@ -70,7 +70,7 @@
           </scg1:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="字幕を表示" DurationMS="5000" FontSize="38" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_3" Message="次は成功するかもしれないエラーなので、(ビジネス例外ではない)例外をスローする" TextColor="White" />
-        <Throw DisplayName="スロー" Exception="[new Exception(&quot;次は成功するかもしれないエラーです&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_4" />
+        <Throw DisplayName="アプリ例外をスロー" Exception="[new Exception(&quot;次は成功するかもしれないエラーです&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_4" />
       </Sequence>
     </Switch>
     <ui:CommentOut DisplayName="コメント アウト" sap:VirtualizedContainerService.HintSize="497,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
